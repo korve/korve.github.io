@@ -1,10 +1,44 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+---
+layout: bootstrap-template
+title: korve's sandbox
+---
+<div class="container">
+    <div class="row">
+        <div class="page-header">
+            <h1>Projects <small>by <a href="https://github.com/korve">korve</a></small></h1>
+        </div>
+        <p>
+            Im a web developer located in germany which wastes time developing websites and applications :)<br/>
+            My main traits are PHP, javascript and nodejs.
+        </p>
 
-</body>
-</html>
+        {% for post in site.posts %}
+            <div class="col-xs-12">
+                <div class="page-header">
+                    <h3>{{ post.title }}</h3>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <img src="{{ site.url }}/{{ post.teaser }}" alt="{{ post.title }}" class="img-responsive" />
+            </div>
+            <div class="col-sm-6">
+                <p>{{ post.description }}</p>
+
+                {% if post.repo_url %}
+                <div class="btn-group">
+                    <a class="btn btn-danger" href="{{site.url}}/projects/kepler-planets-visualization/index.html"><i class="glyphicon glyphicon-play"></i> View</a>
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="{{ post.repo_url }}">View on Github</a></li>
+                    </ul>
+                </div>
+                {% else %}
+                <a class="btn btn-danger" href="{{ post.url }}">Open</a>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
