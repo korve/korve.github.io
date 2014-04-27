@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <base href=""/>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kepler planet discoveries</title>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/theme.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <link rel="stylesheet" href="planets.css"/>
+<script src="raphael-min.js"></script>
+<script src="planets.js"></script>
+
+<div class="container">
+    <div class="row">
+        <div class="page-header inverse">
+            <h1>Kepler planet discoveries</h1>
+        </div>
+
+        <div class="col-xs-12 meta-bar">
+            <div class="btn-group btn-group-filter" id="btn-sort-by">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Sort by <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#" data-sort-key="radius">Radius</a></li>
+                    <li><a href="#" data-sort-key="mass">Mass</a></li>
+                    <li><a href="#" data-sort-key="density">Density</a></li>
+                    <li><a href="#" data-sort-key="ecc">Eccentricity</a></li>
+                </ul>
+            </div>
+
+            <ul class="legend">
+                <li><div class="legend-planet">&nbsp;</div>Planet</li>
+                <li><div class="legend-earth">&nbsp;</div>Earth</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="planets"></div>
+<div class="footer">
+    <p>2014 André Eckardt (<a href="https://github.com/korve/">https://github.com/korve/</a>)</p>
+</div>
+
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>
