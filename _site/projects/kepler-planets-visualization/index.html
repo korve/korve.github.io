@@ -28,10 +28,14 @@
 
 <div class="container container-top">
     <div class="row">
+        <p class="page-intro">
+            This is a comparison of mass, radius and average density of other worlds in relation to earth. The planets were discovered by NASA's kepler probe since 2011.<br>
+            You can download the .csv data <a href="data/planets.csv">here</a> containing all planets scraped from NASA's site.
+        </p>
+        <div class="clearfix"></div>
         <br/>
         <div class="col-xs-12 meta-bar">
             <div class="btn-group btn-group-filter" id="btn-sort-by">
-                <label>Compare by</label>
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                     <span class="compare-by-label">Radius</span> <span class="caret"></span>
                 </button>
@@ -43,14 +47,14 @@
                 </ul>
             </div>
 
-            <div class="btn-group btn-group-filter" id="btn-planet">
+            <!--<div class="btn-group btn-group-filter" id="btn-planet">
                 <label>Compare by</label>
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                     <span class="compare-with-label">Earth</span> <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-planet" role="menu">
                 </ul>
-            </div>
+            </div>-->
 
             <ul class="legend">
                 <li><div class="legend-planet">&nbsp;</div>Planet</li>
@@ -68,9 +72,27 @@
 <div class="planets"></div>
 
 <div class="footer">
-    <p>2014 André Eckardt (<a href="https://github.com/korve/">https://github.com/korve/</a>)</p>
+    <p>With thanks to NASA! <a href="http://kepler.nasa.gov/Mission/discoveries/">http://kepler.nasa.gov/Mission/discoveries/</a> </p>
+    <p><a href="https://github.com/korve/">https://github.com/korve/</a></p>
+    <p><a href="https://korve.github.io/">https://korve.github.io/</a></p>
 </div>
 
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u=(("https:" == document.location.protocol) ? "https" : "http") + "://stats.mindpress.de/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', 6]);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+            g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <noscript><p><img src="http://stats.mindpress.de/piwik.php?idsite=6" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
 </body>
 </html>

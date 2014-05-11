@@ -10,6 +10,10 @@ p {
 	z-index: 400
 }
 
+.page-intro {
+    margin: 50px 0 25px;
+}
+
 .container-top {
 	margin-bottom: 50px;
 }
@@ -53,7 +57,6 @@ p {
 	list-style: none;
 	line-height: 30px;
 	margin-right: 30px;
-	margin-top: 25px;
 }
 
 .legend li .legend-earth,
@@ -89,10 +92,7 @@ p {
 }
 
 .footer {
-	bottom: 0;
-	position: absolute;
 	width: 100%;
-	background: #4b4b4b;
 	padding-top: 10px;
 }
 
